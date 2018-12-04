@@ -1,0 +1,99 @@
+<!---->
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-8"><h3>Workout now</h3></div>
+</div>
+<div class="row mt-3">  
+  <!-- <div class="d-flex flex-row flex-nowrap scrollmenu"> -->
+  <div class="col-10 flex-nowrap scrollmenu d-flex" style="padding-right:0px;">
+    <div class="col-2" style="width: 9em; height: 13em; display: inline-block; padding-right: 3.5em;">
+            
+    </div>
+    <div class="" *ngFor="let workout of pinnedWorkouts" style="padding-right: .5em;">
+      <div class="card" style="width: 9em; height: 13em;">
+          <img class="card-img-top" *ngIf="workout.ImgDisPath" [src]="workout.ImgDisPath"/>
+            <div class="card-body" style="overflow: hidden;">
+                <a routerLink="/workoutexercise/2" routerLinkActive="active">
+                  <h5 class="card-title">{{workout.Name}}</h5>
+                </a>
+                <p class="card-text" [ngClass]="workout.ImgDisPath?'smText':'lgText'">{{workout.Description}}</p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-4">
+  <div class="col-1"></div>
+  <div class="col-8">
+    <h3>Plan your workout</h3>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body" style="margin-bottom:-10px;">
+            <div class="row">
+              <div class="col-10">
+                <a routerLink="/search" routerLinkActive="active">
+                    <h5>Search</h5>
+                </a>
+              </div>
+              <div class="col-1">
+                <img class="icon" src="../../assets/img/search.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2" *ngFor="let iworkout of workoutsOfInterest">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body" (click)="navigateToPreviewPage()">
+                <!-- (click)="navigate(iworkout)" -->
+              <div class="row">
+                <div class="col-10">
+                    <h5 class="card-title">{{iworkout.Name}}</h5>
+                </div>
+                <div class="col-1">
+                    <img class="icon" src="../../assets/img/browse.png"/>
+              </div>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12">
+                        {{iworkout.Description}}
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+
+  <!-- <div *ngFor="let workout of workouts" class="col-3">
+    <div class="card" style="width: 8em">
+      <div class="card-body btn btn-primary" (click)="navigate(workout)">
+        {{ workout.Name }}
+      </div>
+    </div>
+  </div>
+</div>
+<h1>Plan Your Workout</h1>
+<div class="row">
+  <form routerLink="/search" routerLinkActive="active">
+    <input
+      class="buttonBuffer btn btn-primary btn-lg"
+      type="submit"
+      value="Search"
+    />
+  </form>
+>>>>>>> 94a54df55712e25c1d1d5ec85cd8630360d915f7 -->
+</div>

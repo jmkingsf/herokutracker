@@ -1,0 +1,29 @@
+.scrollmenu {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+}
+
+.scrollmenu .card {
+    display: inline-block;
+}
+
+.card-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    font-size: .9em;
+}
+
+.lgText {
+    height:10em;
+}
+
+.smText {
+    height: 4.2em;
+}
+
+.icon {
+    widtH: 1em
+}

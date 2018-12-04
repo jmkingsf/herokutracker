@@ -1,0 +1,30 @@
+<div style="text-align:center;">
+<div>
+<h1>Create New Workout</h1>
+<button><a href="./">Save</a></button>
+<button><a href="./workout-preview">Start</a></button>
+</div>
+<div style="display:inline-grid;">
+<label>Name</label>
+<input placeholder="Ab Blaster">
+
+</div>
+
+<div *ngFor="let workout of workouts">
+  <form class="workout-form">
+  <label>Exercise</label>
+  <input placeholder="Bench Press">
+  <label>Sets</label>
+  <input placeholder="4">
+  <label>Reps</label>
+  <input placeholder="8">
+  <label>Weight</label>
+  <input placeholder="135">
+  </form>
+</div>
+
+<div>
+<button (click)="addWorkout()">Add Workout</button>
+<button (click)="removeWorkout()">Remove Workout</button>
+</div>
+</div>

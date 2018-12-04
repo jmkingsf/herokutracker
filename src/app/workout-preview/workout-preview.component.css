@@ -1,0 +1,15 @@
+.card{
+  height: 300px;
+  text-align: center;
+}
+
+.scrollmenu {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+  /* display: inline-block; */
+}
+
+.scrollmenu .card {
+  display: inline-block;
+}

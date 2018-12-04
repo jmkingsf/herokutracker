@@ -1,0 +1,22 @@
+<!-- Should display nothing on homepage -->
+<nav class="navbar navbar-light mb-4"  style="background-color:#FFF8DC;">
+    <form class="form-inline" *ngIf="router.url === '/workoutfinished'">
+      <button (click)="goToWorkoutPreview()" class="btn btn-outline-success" type="button">Preview</button>
+    </form>
+
+    <form class="form-inline" *ngIf="router.url === '/workouts' || router.url=== '/search'">
+      <button (click)="goHome()" class="btn btn-outline-success" type="button">Home</button>
+    </form>
+
+    <form class="form-inline" *ngIf="router.url === '/workout-preview'">
+      <button (click)="goToWorkouts()" class="btn btn-outline-success" type="button">Workouts</button>
+    </form>
+
+    <form class="form-inline" *ngIf="router.url === '/workoutexercise/2'">
+      <button (click)="goToWorkoutPreview()" class="btn btn-outline-success" type="button">Exit Workout</button>
+    </form>
+
+    <form class="form-inline" *ngIf="router.url === '/custom-workout'">
+      <button (click)="goToSearch()" class="btn btn-outline-success" type="button">Search</button>
+    </form>
+</nav>

@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-10">
+    <h1>Workout preview</h1>
+  </div>
+  <div class="col-2">
+      <a routerLink="/workoutexercise/2" routerLinkActive="active">
+          <img style="width:3.5em; height: 3.5em;" src="../../assets/img/play.png">
+      </a>
+  </div>
+</div>
+
+<div>
+  <div  class="row mt-4">
+    <div class="col-12 flex-nowrap scrollmenu d-flex" style="padding-right:0px;">
+      <div *ngFor="let workout of workouts">
+          <div class="card mr-2" style="width: 8em;">
+              <div class="card-body">
+                <h5 class="card-title">{{workout.name}}</h5>
+              </div>
+                    <strong>Set:</strong><p>{{workout.sets}}</p>
+                    <strong>Reps:</strong><p>{{workout.reps}}</p>
+                    <strong>Weight:</strong><p>{{workout.weight}} lbs</p>
+          </div>
+      </div>
+         
+    </div>
+  </div>
+        
+</div>
+<div class="row mt-3">
+  <div class="col-12">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gRVjAtPip0Y" allowfullscreen></iframe>
+      </div>
+    <div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.btn {
+  background-color: Khaki;
+  color: black;
+  border-color: Khaki;
+}
+body {
+  background-color: #FFF8DC;
+}
+
+h1 {
+  color: DarkRed;
+}
+
+h2 {
+  color: DarkRed;
+}
+
+h3 {
+  color: DarkRed;
+}
+
+h5 {
+  color: Red;
+}
